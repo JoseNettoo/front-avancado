@@ -5,7 +5,7 @@ const ListaDeAlunos = () => {
 
     useEffect(() => {
        async function fetchData(){
-        const response =await fetch("http://localhost:3000/alunos")
+        const response = await fetch("http://localhost:3000/alunos")
         const data = await response.json()
         setAlunos(data)
 
